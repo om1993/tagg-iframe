@@ -83,8 +83,6 @@
                     <h5>Enter Donation Request here</h5>
 
 
-                    <input type="button" value="URL for Donation Request"
-                           onClick="window.open('http://tagg-preprod.herokuapp.com/donationrequests/create?orgId=21 ');"/>
                 </div>
 
                 <iframe src="http://tagg-preprod.herokuapp.com/donationrequests/create?orgId=21" id="1" name="ifr" height="200" width="800"></iframe>
