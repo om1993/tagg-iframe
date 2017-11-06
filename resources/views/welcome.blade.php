@@ -85,8 +85,8 @@
 
                 </div>
 
-                <iframe src="http://tagg-preprod.herokuapp.com/donationrequests/create?orgId=21" id="1" name="ifr" height="200" width="800"></iframe>
-
+                {{--<iframe src="http://tagg-preprod.herokuapp.com/donationrequests/create?orgId=21" id="1" name="ifr" height="200" width="800"></iframe>
+--}}
 
 
                 <body>
@@ -99,7 +99,7 @@
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-                    <a href="http://tagg-preprod.herokuapp.com/">Tagg</a>
+                    
                 </div>
             </div>
         </div>
