@@ -80,8 +80,10 @@
             <div class="content">
                 <div class="title m-b-md">
 
-                    Demo iFrame page
+                    Demo Iframe page
                     <h5>Enter Donation Request here</h5>
+
+
                 </div>
                 <div id="my-div" style="height: 500px">
                     <script
@@ -92,67 +94,36 @@
                             src="{!! getenv('APP_DR_URL') ?? 'https://secondins.herokuapp.com' !!}/js/embedded-iframe.js"
                     ></script>
 
-                {{--<iframe src="{!! getenv('APP_DR_URL') ?? 'https://secondins.herokuapp.com' !!}/donationrequests/create?orgId=1&newrequest=2" onload="resizeIframe(this)"
-                        id="my-iframe-identifier" name="ifr" scrolling="no"
-                        style="min-width: 100%; width: 1px; border: hidden; position: absolute; top: 0; bottom: 0; left: 0; right: 0; overflow-y: hidden" > </iframe>--}}
-                    <div style="position: relative; height: 50%; width: 50%">
-                        {{--<iframe src="{!! getenv('APP_DR_URL') ?? 'https://secondins.herokuapp.com' !!}/donationrequests/create?orgId=1&newrequest=2"
-                                style="padding: 0px; width: 100%; height: 100%">
+                <iframe src="https://secondins.herokuapp.com/donationrequests/create?orgId=691&newrequest=true" id="1" name="ifr" height="800" width="800" > </iframe>
 
-                        </iframe>--}}
-                    </div>
-                    <div id="testFrame">
+                </div>
 
-                    </div>
 
                 </div>
                 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
                 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
                 {{--<script type="text/javascript" src="https://unpkg.com/iframe-resizer@3.5.15/js/iframeResizer.min.js"></script>--}}
-                <{{--script type="text/javascript">
-                    $('#testFrame-div').load("{!! getenv('APP_DR_URL') ?? 'https://secondins.herokuapp.com' !!}/donationrequests/create?orgId=1&newrequest=2 #divRequestForm");
-                    /*$('#my-iframe-identifier').iFrameResize({
-                        log: true,
-                        inPageLinks: true,
-                        heightCalculationMethod: 'lowestElement'
-                    })*/
-                    // Find all iframes
-                    var $iframes = $('iframe');
+{{--<script type="text/javascript">
+    $('#testFrame-div').load("{!! getenv('APP_DR_URL') ?? 'https://secondins.herokuapp.com' !!}/donationrequests/create?orgId=1&newrequest=2 #divRequestForm");
+    /*$('#my-iframe-identifier').iFrameResize({
+        log: true,
+        inPageLinks: true,
+        heightCalculationMethod: 'lowestElement'
+    })*/
+    // Find all iframes
+    var $iframes = $('iframe');
 
-                    // Find &#x26; save the aspect ratio for all iframes
-                    $iframes.each(function () {
-                        $( this ).data( "ratio", this.height / this.width )
-                        // Remove the hardcoded width &#x26; height attributes
-                            .removeAttr( "width" )
-                            .removeAttr( "height" );
-                    });
+ </body>--}}
 
-                    // Resize the iframes when the window is resized
-                    $( window ).resize( function () {
-                        $iframes.each( function() {
-                            // Get the parent container&#x27;s width
-                            var width = $( this ).parent().width();
-                            var height = $( this ).parent().height();
-                            $( this ).width( width )
-                                .height(  height );
-                        });
-// Resize to fix all iframes on page load.
-                    }).resize();
+<div class="links">
+    <a href="https://laravel.com/docs">Documentation</a>
+    <a href="https://laracasts.com">Laracasts</a>
+    <a href="https://laravel-news.com">News</a>
+    <a href="https://forge.laravel.com">Forge</a>
+    <a href="https://github.com/laravel/laravel">GitHub</a>
 
-                    function resizeIframe(iframe) {
-                        iframe.height = (iframe.contentWindow.document.body.scrollHeight + 100) + "px";
-                    }
-                </script>--}}
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-
-                </div>
-            </div>
-        </div>
-    </body>
+</div>
+</div>
+</body>
 </html>
